@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #1a2e26;
+    background-color: #fcfbf7;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, .font-heading {
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  .font-serif-islamic {
+    font-family: 'Amiri', serif;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1efe9;
+}
+::-webkit-scrollbar-thumb {
+  background: #2d6a4f;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1b4332;
+}
+
+/* Tree line connector styles */
+.tree-line-v {
+  position: absolute;
+  width: 2px;
+  background: linear-gradient(to bottom, #d4af37, #2d6a4f);
+}
+.tree-line-h {
+  position: absolute;
+  height: 2px;
+  background: linear-gradient(to right, #d4af37, #2d6a4f);
+}
+
+/* Gold shimmer effect */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.gold-shimmer {
+  background: linear-gradient(90deg, #d4af37 0%, #ffe885 50%, #d4af37 100%);
+  background-size: 200% 100%;
+  animation: shimmer 4s infinite;
+}
+

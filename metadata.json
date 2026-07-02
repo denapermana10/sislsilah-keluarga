@@ -1,0 +1,6 @@
+{
+  "name": "Silsilah Keluarga Besar Abah Odang & Enin Ucah",
+  "description": "Landing Page Interaktif + Sistem Manajemen Silsilah Keluarga 4 Turunan Abah Odang dan Enin Ucah",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
